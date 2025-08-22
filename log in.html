@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+        <link rel="stylesheet" href="LOGIN.css"/>
+
+
+<script>
+ function login(){
+
+       var password=document.getElementById("password").value
+       var username=document.getElementById("username").value
+
+   
+
+        if (username===""||password===""){
+          alert("Plesae fill up the space")
+            return;
+        
+        }
+
+        if (username !=="Boni"){
+        alert("Wrong password")
+        return;
+    }
+        if (password.length <= 6 || password.length > 20) {
+        alert("Password must be more than 6 characters and must not be more than 20 characters");
+        return;
+    }
+    
+    if (password !=="1234567"){
+        alert("Wrong password")
+        return;
+    }
+    
+    window.location.href ='HOME PAGE.html'
+    alert("Login Successfully");
+    return false;
+}
+
+</script>
+
+</head>
+<body>
+
+    <header>
+            <h1>welcome to Boni spaza shop login</h1>
+            <nav>
+             <a href="HOME PAGE.html">home page</a><br>
+            </nav>
+
+
+        </header>
+
+        <br><br>
+<div id="images">
+<img src="BONI SPAZA.jpg" alt="">
+</div>
+
+ <fieldset>
+                <legend>log in</legend>
+                
+                <form onsubmit="return login()">
+        
+            username : <input type="text" id="username" required/>
+            password : <input type="password" id="password"required/>
+            <button onclick="login()">Log in</button>
+
+                </form>
+    </fieldset>
+</body>
+
+<footer>
+     <p> &copy:2025</p> 
+</footer>
+</html>
+
+
+
+
+</html>

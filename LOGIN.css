@@ -1,0 +1,55 @@
+body {
+
+font-family:arial,sans-serif;
+background: linear-gradient(to right, rgb(168, 25, 25),rgb(167, 167, 24));
+
+}
+
+header{
+    
+   grid-area: header;
+   padding: 20px;
+    background: #3e4c58;
+    font-size: larger;
+    text-align: center;
+
+}
+
+header h1{
+    color: white;
+    font-weight: 100px;
+    font-size: x-large;
+}
+
+body img{
+    text-align: center;
+    width: 600px;
+    height: 300px;
+    margin-left: 350px;
+    border-radius: 10px;
+}
+
+fieldset{
+    text-align: center;
+    padding: 20px;
+
+}
+
+footer{
+    text-align: center;
+    font-size: larger;
+    background: #3e4c58;
+    padding: 25px;
+}
+
+#form{
+    display: block;
+    padding: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(197, 169, 12);
+    font-size: larger;
+
+}

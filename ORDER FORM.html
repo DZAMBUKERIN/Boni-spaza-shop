@@ -1,0 +1,109 @@
+!
+<html>
+    <head>
+        <title>order page</title>
+         <link rel="stylesheet" href="boni css.css"/>
+    </head>
+    <body>
+
+        <header>
+            <h2> welcome to boni spaza shop</h2>
+            
+                <nav>
+                <div id="=navigation">
+            <a href="HOME PAGE.html">homepage</a>
+            <a href="BONI SPAZA SHOP">order here</a>
+            <a href="log in.html">log in</a>
+                </div>
+            </nav>
+        
+
+        </header>
+<div>
+<img src="BONI SPAZA.jpg" alt="">
+</div>
+        
+        <div>
+<form name="my form" action="#">
+            <h1>order form</h1>
+            <fieldset>
+                <legend> make an order</legend><br>
+                SPAZA SHOP:
+                <select id="maizemeal" name="=maizemeal">
+                    <option value="0" selected>maizemeal</option>
+                    <option value="rice "selected >rice</option>
+                    <option value="sugar " selected>sugar</option>
+                    <option value= "potatoes " selected>potatoes</option>
+                </select>   <br><br>
+                <table>
+                    <tr>
+                        <td>name<input type="name" size="25"name="txtname" maxlength="20" required></td>
+                    </tr>
+                    <tr>
+                        <td>surname<input type="surname" size="25"name="txtsurname" maxlength="15" required></td>
+                    </tr>
+                    <tr>
+                        <td>contact no<input type="contact no" size="25"name="txtcontactno" maxlength="20" required></td>
+                    </tr>
+                    <tr>
+                        <td>email<input type="email" size="25"name="txtemail" maxlength="25" required></td>
+                    </tr>
+                    <tr>
+                        <td>payment <input type="payment" size="25"name="txtpayment" maxlength="15" required></td>
+                    </tr>
+                    
+                </table>
+                <button onclick="submitorder()">Submit</button>
+               
+            </fieldset>
+        </form>
+        </div>
+        <head>
+            <body>
+                <h1>order form</h1>
+                <p><i>make an order</i></p>
+                                        
+                    </form>
+                    <p id="message"></p>
+                </div>
+                <script>
+                    function submitorder(){
+                        let item=
+                        document.getElementById("item").value;
+                        let name=
+                        document.getElementById("name").value;
+                        let surname=
+                        document.getElementById("surname").value;
+                        let contact=
+                        document.getElementById("contact").value;
+                        let email=
+                        document.getElementById("email").value;
+                        let payment=a
+                        document.getElementById("payment").value;
+                        let message=
+                        document.getElementById("message");
+                        // validation
+                        if (item===""||name===""||surname===""||contact===""||email===""||payment===""){
+message.style.color="red";
+message.innerHTML="please fill all field ";
+return;
+                        }
+                        //simple contact check (numbers only)
+                        if (isNaN(contact)){
+                            message.style.color="red";message.innerHTML="contact number must be digit only";
+                            return 
+                        }
+                         alert("Order Submited");
+                            }  
+                </script>
+            </body>
+        </head>
+        <html>
+            
+        </html>
+
+    </body>
+     <footer>
+        <p>&copy:2025</p> 
+    </footer>
+</html>   
